@@ -18,7 +18,7 @@ export function Footer() {
           X
         </a>
         <a
-          href="https://github.com/0x-samrat"
+          href="https://github.com/0xSamrat/"
           target="_blank"
           rel="noopener noreferrer"
         >
