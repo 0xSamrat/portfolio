@@ -15,7 +15,7 @@ export function WritingTeaser() {
         </div>
         <a
           className="btn secondary"
-          href="https://medium.com"
+          href="https://medium.com/@0xSamrat"
           target="_blank"
           rel="noopener noreferrer"
         >

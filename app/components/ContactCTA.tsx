@@ -31,7 +31,7 @@ export function ContactCTA() {
         <div className="actions">
           <a
             className="btn primary"
-            href="https://cal.com/samrat-mukherjee"
+            href="https://cal.com/0xsamrat/15min"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -40,7 +40,7 @@ export function ContactCTA() {
           </a>
           <a
             className="btn secondary"
-            href="/resume.pdf"
+            href="https://drive.google.com/file/d/14feSsx0a-vZ4A2sf8XZluPPLiVPx2DK_/view"
             target="_blank"
             rel="noopener noreferrer"
           >

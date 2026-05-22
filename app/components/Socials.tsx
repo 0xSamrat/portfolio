@@ -66,7 +66,7 @@ export function Socials() {
       <div className="socials-grid">
         <a
           className="social-card"
-          href="https://github.com/0x-samrat"
+          href="https://github.com/0xSamrat/"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -75,7 +75,7 @@ export function Socials() {
           </span>
           <div>
             <div className="social-platform">GitHub</div>
-            <div className="social-handle">/0x-samrat</div>
+            <div className="social-handle">/0xSamrat</div>
           </div>
           <span className="social-arrow">↗</span>
         </a>

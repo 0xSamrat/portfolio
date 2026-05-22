@@ -1,21 +1,6 @@
-"use client";
-
-import { useState } from "react";
 import { PhotoCard } from "./PhotoCard";
 
-const EMAIL = "samrat.mukherjee2022@gmail.com";
-
 export function Hero() {
-  const [copied, setCopied] = useState(false);
-
-  const copyEmail = async () => {
-    try {
-      await navigator.clipboard.writeText(EMAIL);
-    } catch {}
-    setCopied(true);
-    window.setTimeout(() => setCopied(false), 1400);
-  };
-
   return (
     <section className="hero">
       <div>
@@ -39,7 +24,7 @@ export function Hero() {
         <div className="cta-row">
           <a
             className="btn primary"
-            href="https://cal.com/samrat-mukherjee"
+            href="https://cal.com/0xsamrat/15min"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -48,25 +33,13 @@ export function Hero() {
           </a>
           <a
             className="btn secondary"
-            href="/resume.pdf"
+            href="https://drive.google.com/file/d/14feSsx0a-vZ4A2sf8XZluPPLiVPx2DK_/view"
             target="_blank"
             rel="noopener noreferrer"
           >
             <span>Resume</span>
             <span className="arrow">↓</span>
           </a>
-          <button
-            type="button"
-            className="btn ghost"
-            onClick={copyEmail}
-            title="Click to copy"
-            style={{
-              border: "none",
-              color: copied ? "var(--accent)" : undefined,
-            }}
-          >
-            <span className="email-text">{copied ? "copied ✓" : EMAIL}</span>
-          </button>
         </div>
       </div>
 
