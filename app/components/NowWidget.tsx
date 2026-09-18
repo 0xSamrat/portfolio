@@ -1,3 +1,5 @@
+import { IDENTITY, LINKS } from "../content/profile";
+
 export function NowWidget() {
   return (
     <section id="now">
@@ -15,31 +17,44 @@ export function NowWidget() {
           <div className="item">
             <div className="k">Looking for</div>
             <div className="v">
-              Software developer, blockchain developer, Go backend roles.
+              AI engineer, AI agent developer, and applied-LLM roles. Go backend
+              work too, where the agents need something reliable underneath.
             </div>
           </div>
           <div className="item">
             <div className="k">Based in</div>
-            <div className="v">Bangalore, India (UTC+5:30).</div>
+            <div className="v">
+              {IDENTITY.location.city}, {IDENTITY.location.country} (
+              {IDENTITY.location.utcOffset}).
+            </div>
           </div>
         </div>
         <div className="col">
           <div className="item">
             <div className="k">Stack</div>
             <div className="v">
-              Go · Kafka · gRPC · Redis · AWS · Postgres · Solidity · EVM · TS ·
-              Next.js
+              Python · LangGraph · Pinecone · FastAPI · Pydantic · LangSmith ·
+              OpenTelemetry · Go · Postgres · Docker
             </div>
           </div>
           <div className="item">
-            <div className="k">Previously</div>
+            <div className="k">Building</div>
             <div className="v">
-              Backend &amp; blockchain engineer at AtumLabs.
+              <a href="https://shortlistapp.co" target="_blank" rel="noopener noreferrer">
+                Shortlistapp.co
+              </a>{" "}
+              — an agent that applies to jobs end to end, with paying customers.
             </div>
           </div>
           <div className="item">
             <div className="k">Reply time</div>
-            <div className="v">Same day, usually within a few hours.</div>
+            <div className="v">
+              Same day, usually within a few hours —{" "}
+              <a href={LINKS.cal} target="_blank" rel="noopener noreferrer">
+                or just book a slot
+              </a>
+              .
+            </div>
           </div>
         </div>
       </div>

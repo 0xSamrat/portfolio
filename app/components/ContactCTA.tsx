@@ -1,15 +1,14 @@
 "use client";
 
 import { useState } from "react";
-
-const EMAIL = "samrat.mukherjee2022@gmail.com";
+import { IDENTITY, LINKS } from "../content/profile";
 
 export function ContactCTA() {
   const [copied, setCopied] = useState(false);
 
   const copyEmail = async () => {
     try {
-      await navigator.clipboard.writeText(EMAIL);
+      await navigator.clipboard.writeText(IDENTITY.email);
     } catch {}
     setCopied(true);
     window.setTimeout(() => setCopied(false), 1500);
@@ -20,39 +19,44 @@ export function ContactCTA() {
       <div className="contact">
         <div>
           <h2>
-            Let&apos;s <em>build</em> something together.
+            Let&apos;s <em>build</em> something that ships.
           </h2>
           <p>
-            If you&apos;re hiring for a backend, blockchain, or Go role — or
-            just want to talk distributed systems — pick a time. The call is on
-            me.
+            If you&apos;re hiring for an AI engineer or agent developer role — or
+            you have an agent that works in a demo and falls over in production —
+            pick a time. The call is on me.
           </p>
         </div>
         <div className="actions">
           <a
             className="btn primary"
-            href="https://cal.com/0xsamrat/15min"
+            href={LINKS.cal}
             target="_blank"
             rel="noopener noreferrer"
           >
             <span>Book a 15-min call</span>
-            <span className="arrow">→</span>
+            <span className="arrow" aria-hidden="true">
+              →
+            </span>
           </a>
           <a
             className="btn secondary"
-            href="https://drive.google.com/file/d/14feSsx0a-vZ4A2sf8XZluPPLiVPx2DK_/view"
+            href={LINKS.resume}
             target="_blank"
             rel="noopener noreferrer"
           >
             <span>Download resume</span>
-            <span className="arrow">↓</span>
+            <span className="arrow" aria-hidden="true">
+              ↓
+            </span>
           </a>
           <button
             type="button"
             className={`copy-email${copied ? " copied" : ""}`}
             onClick={copyEmail}
+            aria-label={`Copy email address ${IDENTITY.email}`}
           >
-            <span>{EMAIL}</span>
+            <span>{IDENTITY.email}</span>
             <span className="copied">copied</span>
           </button>
         </div>

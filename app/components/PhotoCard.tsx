@@ -7,7 +7,7 @@ export function PhotoCard() {
         <div className="photo-slot">
           <Image
             src="/photo.jpg"
-            alt="Samrat Mukherjee"
+            alt="Samrat Mukherjee, AI engineer, Bengaluru"
             width={640}
             height={800}
             priority
@@ -27,8 +27,12 @@ export function PhotoCard() {
       </div>
 
       <div className="floater f1">
-        <span className="pulse-d" />
-        <span>500 MAU at Defipe</span>
+        <span className="pulse-d" aria-hidden="true" />
+        <span>Agents in production</span>
+      </div>
+      <div className="floater f2">
+        <span className="f-val">88%</span>
+        <span>answer coverage</span>
       </div>
     </div>
   );
